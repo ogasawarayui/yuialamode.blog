@@ -1,12 +1,11 @@
-import Header from './Header';
-import Footer from './Footer';
-
-export default function Layout({ children }) {
+const Footer = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-1 max-w-4xl w-full mx-auto">{children}</main>
-      <Footer />
-    </div>
+    <footer className="bg-gray-100">
+      <div className="max-w-4xl w-full mx-auto h-24 flex items-center justify-center">
+        <div>© My Blog</div>
+      </div>
+    </footer>
   );
-}
+};
+
+export default Footer;
