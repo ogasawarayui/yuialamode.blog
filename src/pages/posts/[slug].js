@@ -190,16 +190,7 @@ const Post = ({ frontMatter, content, slug, toc }) => {
             <span>No categories available</span>
           )}
         </div>
-        <div className="grid grid-cols-12">
-          <div className="col-span-9">{toReactNode(content)}</div>
-          <div className="col-span-3">
-          <h2 className="text-xl font-bold mb-2">目次</h2>
-            <div
-              className="sticky top-[50px]"
-              dangerouslySetInnerHTML={{ __html: toc }}
-            ></div>
-          </div>
-        </div>
+        <div>{toReactNode(content)}</div>
       </div>
     </>
   );
