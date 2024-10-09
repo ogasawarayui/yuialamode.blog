@@ -1,21 +1,22 @@
 ---
-title: 'Contact'
-date: '2024-10-09'
-description: 'お問合せ'
-image: nextjs.png
-categories: ['react']
+title: 'お問合せ'
+date: '2024-10-04'
+description: '出演依頼はこちら'
+image: '/contact.JPG'
+categories: ['記事一覧']
 ---
 
-<img src="http://localhost:3000/nextjs-welcome.png" alt="Next.jsのWelcomeページ" width="1024" height="679" />
+お問い合わせ・ファンレターやプレゼントは
+下記までお願いします。
 
-## 目次
+## Tee up Promotion
 
-Next.js を使って Markdown のブログサイトの構築を一から行なっていきます。
-
-## Next.js の準備
-
-### プロジェクトの作成
-
-npx create-next-app コマンドを利用して Next.js プロジェクトの作成を行います。
-
-[記事一覧](/)
+### 電話番号
+03-6869-1233
+### メールアドレス
+info@tee-up.jp
+### 住所
+〒170-0013
+東京都豊島区東池袋3-8-8
+T&G東池袋マンションB1
+新咲結菜　宛

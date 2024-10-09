@@ -1,15 +1,17 @@
 ---
-title: 'Information'
-date: '2024-10-7'
+title: 'お知らせ'
+date: '2024-10-8'
 description: 'LIVE情報など'
-image: Information.png
-categories: ['react']
+image: '/information.JPG'
+categories: ['記事一覧']
 ---
 
-LIVEなど新着情報を更新してます
+## LIVEなど新着情報を更新してます
 
-## 目次
+12/4 アトリエそら豆さんオープンマイク　17時OPEN 18時START
 
-## Breeze のインストール
-
-Vite の動作確認を行うため Laravel プロジェクトの作成後に Breeze パッケージのインストールを行います。
+### 住所
+アトリエそら豆
+〒157-0073
+東京都世田谷区砧６丁目２９−５ 堀口ビル 1F
+(祖師ヶ谷大蔵駅から3分、祖師谷みなみ商店街 の真ん中にあるカフェです。)

@@ -14,6 +14,9 @@ export async function getStaticProps({ params }) {
   const posts = files.map((fileName) => {
     const slug = fileName.replace(/\.md$/, "");
     const fileContent = fs.readFileSync(`posts/${fileName}`, "utf-8");
+
+    console.log("File Content:", fileContent);
+
     const { data } = matter(fileContent);
 
     return {
@@ -21,6 +24,8 @@ export async function getStaticProps({ params }) {
       slug,
     };
   });
+
+  console.log("Posts:", posts);
 
   // Sort posts by date (latest first)
   const sortedPosts = posts.sort((postA, postB) =>
@@ -57,14 +62,18 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
 const Page = ({ posts, pages, current_page }) => {
+  if (!posts || posts.length === 0) {
+    return <div>Loading...</div>; // フォールバックの間に表示する内容
+  }
+  console.log(posts);
   return (
     <div className="my-8">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 gap-4">
         {posts.map((post) => (
           <PostCard key={post.slug} post={post} />
         ))}

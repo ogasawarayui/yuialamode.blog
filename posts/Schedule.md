@@ -1,21 +1,15 @@
 ---
 title: '配信スケジュール'
-date: '2024-10-08'
-description: 'おおまかな配信のスケジュール'
-image: nextjs.png
-categories: ['react']
+date: '2024-10-07'
+description: '変更はXに投稿してます'
+image: '/schedule.JPG'
+categories: ['記事一覧']
 ---
 
-<img src="http://localhost:3000/nextjs-welcome.png" alt="Next.jsのWelcomeページ" width="1024" height="679" />
+急な変更など、URLの共有はXにて行なっておりますのでXをご確認ください。
 
-## 目次
+### TIKTOK
 
-Next.js を使って Markdown のブログサイトの構築を一から行なっていきます。
-
-## Next.js の準備
-
-### プロジェクトの作成
-
-npx create-next-app コマンドを利用して Next.js プロジェクトの作成を行います。
-
-[記事一覧](/)
+毎日１時間配信しております
+平日　19時〜20時
+土日祝日　時間未定、Xにて随時

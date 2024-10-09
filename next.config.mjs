@@ -4,12 +4,16 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  experimental: {
-    runtime: 'automatic',
-  },
-  images: {
-    domains: ['localhost'],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'http', // or 'https'
+  //       hostname: 'localhost',
+  //       port: '3000', // 省略可
+  //       pathname: '/**', // 必要に応じて変更
+  //     },
+  //   ],
+  // },
 };
 
 export default nextConfig;
