@@ -3,6 +3,8 @@ import matter from 'gray-matter';
 import PostCard from 'components/PostCard';
 
 export const getStaticProps = ({ params }) => {
+  const category = decodeURIComponent(params.category);
+
   const files = fs.readdirSync('posts');
   const posts = files.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '');
@@ -14,11 +16,7 @@ export const getStaticProps = ({ params }) => {
     };
   });
 
-  const category = params.category;
-
-  const filteredPosts = posts.filter((post) => {
-    return post.frontMatter.categories.includes(category);
-  });
+  const filteredPosts = posts.filter((post) => post.frontMatter.categories.includes(category));
 
   const sortedPosts = filteredPosts.sort((postA, postB) =>
     new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1
@@ -32,8 +30,20 @@ export const getStaticProps = ({ params }) => {
 };
 
 export const getStaticPaths = () => {
-  const categories = ['react', 'laravel'];
-  const paths = categories.map((category) => ({ params: { category } }));
+  const files = fs.readdirSync('posts');
+  const categories = new Set();
+
+  files.forEach((fileName) => {
+    const fileContent = fs.readFileSync(`posts/${fileName}`, 'utf-8');
+    const { data } = matter(fileContent);
+    if (data.categories) {
+      data.categories.forEach((category) => categories.add(category));
+    }
+  });
+
+  const paths = Array.from(categories).map((category) => ({
+    params: { category: encodeURIComponent(category) },
+  }));
 
   return {
     paths,
