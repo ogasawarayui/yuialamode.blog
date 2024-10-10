@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="ja">
       <Head>
         {/* 必要に応じてカスタムメタタグやリンクを追加 */}
       </Head>
