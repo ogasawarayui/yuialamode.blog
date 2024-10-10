@@ -1,6 +1,6 @@
 export default {
-  title: 'Next.js Blog',
-  description: 'Next.jsなどの技術情報を発信するブログです。',
+  title: 'yuialamode.blog',
+  description: '新咲結菜公式ブログです。',
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
