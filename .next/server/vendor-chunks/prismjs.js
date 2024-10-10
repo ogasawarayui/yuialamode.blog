@@ -28,16 +28,6 @@ exports.modules = {
 
 
 
-/***/ }),
-
-/***/ "./node_modules/prismjs/themes/prism-tomorrow.css":
-/*!********************************************************!*\
-  !*** ./node_modules/prismjs/themes/prism-tomorrow.css ***!
-  \********************************************************/
-/***/ (() => {
-
-
-
 /***/ })
 
 };
